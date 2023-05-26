@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etch-A-Sketch</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>  
+</head>
+<body>
+  <div class="container">
+    <main>
+      <div class="main__header">
+        <h1 class="main__header-title">Etch-A-Sketch</h1>
+        <p class="main__header-text">Choose the grid size, color, use you mouse to draw</p>
+      </div>
+      <div class="controls">
+        <div class="grid__size">
+          <input type="range" min="64" max="96" step="8" value="64" class="slider" id="myRange">
+          <div id="grid__size--input">64</div>
+        </div>
+        <div class="color"></div>
+        <div class="background__color"></div>
+      </div>
+    </main>
+    <section class="sketch"></section>
+  </div>
+</body>
+</html>
